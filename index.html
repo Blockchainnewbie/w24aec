@@ -5,79 +5,115 @@
     <meta charset="UTF-8">
     <!-- Unsere Website ist jetzt Responsive mit tag viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- -->
     <title>daa AE 2024</title>
+    <!-- Verlinkung der CSS-Datei (site.css), die das Styling der Seite enthält -->
+    <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
-    <!--muss nur einmal pro Site benutzt werden! (Such machine )-->
-    <h1>H1</h1>
-    <h2>h2</h2>
-    <!-- in HTML nur ein space wird übersätzt-->
-    hello , it is with lots if space ! ! !
-    , next line ohne br tag!
+    <!-- Die Hauptüberschrift der Seite, die mit der Klasse "mygreen" in Grün-Gelb gestylt ist -->
+    <h1 class="mygreen">H1</h1>
+    <!-- Unterüberschrift der Seite, ebenfalls grün-gelb gestylt -->
+    <h2 class="mygreen">h2</h2>
+
+    <!-- Absatz mit der Klasse "myBgWhite" für einen hellen Hintergrund, damit der Text auf schwarzem Hintergrund lesbar ist -->
+    <p class="myBgWhite">
+        hello, it is with lots of space!!!, next line ohne br tag!
+    </p>
+
+    <!-- Zeilenumbruch mit <br> Tag -->
     <br> next line
     <br>
-    <!-- create Hr line-->
+
+    <!-- Horizontale Linie, um Inhalte zu trennen -->
     <hr>
-    <!-- steht für Paragraph-->
-    <p>
+
+    <!-- Ein weiterer Absatz mit Beispieltext, ebenfalls in einem hellen Hintergrund -->
+    <p class="myBgWhite">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy eirmod tempor invidunt ut labore et
         dolore magna aliquyam erat,
-        <hr>
-            <p> xxxxx hello <a href="https://www.google.com">link</a> xxxxx</p>
-        <hr> 
+    </p>
+
+    <!-- Horizontale Linie als Trennung -->
+    <hr>
+
+    <!-- Ein Absatz mit einem Link. Der Link ist in der CSS-Datei auf "antiquewhite" gestylt -->
+    <p class="myBgWhite"> 
+        xxxxx hello <a href="https://www.google.com">link</a> xxxxx
+    </p>
+
+    <!-- Noch eine horizontale Linie -->
+    <hr>
+
+    <!-- Absatz mit weiterem Beispieltext -->
+    <p class="myBgWhite">
         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
         takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
         justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
 
-    <!-- link to other page!-->
+    <!-- Link zu einer anderen Seite auf deiner Website, hier zur Seite "contact.html" -->
     <a href="contact.html">go to page contact</a>
 
+    <!-- Bild mit einer Höhe von 200px und einem beschreibenden Titel sowie einem Alternativtext -->
+    <img src="nice.jpg" title="pretty" height="200px" alt="Schönes Bild"/>
 
-    <img  src="nice.jpg" title="pretty" height="200px"/>
-    <!-- unordered list-->
-    <ul>
-        <li>Alex</li>
-        <li>Olga</li>
-        <li>Matjin</li>
+    <!-- Ungeordnete Liste (bullet points) mit vier Listenelementen, von denen drei grün-gelb gestylt sind -->
+    <ul class="myBgWhite">
+        <li class="mygreen">Alex</li>
+        <li class="mygreen">Olga</li>
+        <li class="mygreen">Matjin</li>
         <li>
-            <p>dslkjflksdjfkldjl</p>
+            <!-- Ein Absatz innerhalb des Listenelements, auch grün-gelb gestylt -->
+            <p class="mygreen">dslkjflksdjfkldjl</p>
+            <!-- Verlinktes Bild innerhalb der Liste, führt zur Seite "contact.html" -->
             <a href="contact.html">
-                <img  src="nice.jpg" title="pretty" height="200px"/>
+                <img src="nice.jpg" title="pretty" height="200px" alt="Schönes Bild"/>
             </a>
         </li>
     </ul>
 
-    <!--Ordered List-->
-    <ol>
-        <li><button>click me</button></li>
-        <li> lati</li>
-        <li>frodo</li>
-        <li>Axel</li>
+    <!-- Geordnete Liste (nummeriert) mit vier Listenelementen -->
+    <ol class="myBgWhite">
+        <li>
+            <!-- Ein Button innerhalb des Listenelements -->
+            <button>click me</button>
+        </li>
+        <!-- Die nächsten Listenelemente sind grün-gelb gestylt -->
+        <li class="mygreen">lati</li>
+        <li class="mygreen">frodo</li>
+        <li class="mygreen">Axel</li>
     </ol>
-    <!--devision-->
-    <div>div 1</div>
-    <div>div 2</div>
-    <section>section</section>
 
-    <!--table-->
-    <table >
+    <!-- Zwei Div-Elemente, die als Container verwendet werden und beide einen hellen Hintergrund haben -->
+    <div class="myBgWhite">div 1</div>
+    <div class="myBgWhite">div 2</div>
+
+    <!-- Section-Element, das eine andere Sektion der Seite darstellt und ebenfalls einen hellen Hintergrund hat -->
+    <section class="myBgWhite">section</section>
+
+    <!-- Tabelle mit einem Kopfbereich und einem Körperbereich -->
+    <table class="myBgWhite">
         <thead>
-
+            <tr>
+                <!-- Tabellenüberschriften -->
+                <th>col 1</th>
+                <th>col 2</th>
+            </tr>
         </thead>
-        <tr> 
-            <td>col 1</td>
-            <td>col 2</td>
-
-        </tr>
-        <tr> 
-            <td>col 1</td>
-            <td><button>click me</button></td>
-
-        </tr>
+        <tbody>
+            <!-- Erste Tabellenreihe -->
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+            </tr>
+            <!-- Zweite Tabellenreihe mit einem Button im zweiten Spaltenelement -->
+            <tr>
+                <td>col 1</td>
+                <td><button>click me</button></td>
+            </tr>
+        </tbody>
     </table>
 </body>
 
