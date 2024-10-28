@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php  
 require_once(".\layout\header.php");
 require_once(".\app\controller\contactController.php");
@@ -25,4 +26,8 @@ $result = $controller->sendMessage();
 </form>
 
 
+=======
+<?php  require_once(".\layout\header.php") ?>
+    it is contact page
+>>>>>>> 030642ac3b9ddbe3d9171cdc1525009a41a06c9a
 <?php  require_once(".\layout\\footer.php") ?>

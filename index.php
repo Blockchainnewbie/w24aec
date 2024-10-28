@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -50,3 +51,8 @@
     </footer>
 </body>
 </html>
+=======
+<?php  require_once(".\layout\header.php") ?>
+    hi
+<?php  require_once(".\layout\\footer.php") ?>
+>>>>>>> 030642ac3b9ddbe3d9171cdc1525009a41a06c9a
