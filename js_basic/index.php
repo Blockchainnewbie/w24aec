@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Mein Profil</title>
     <link rel="stylesheet" href="styles.css">
     <script src="js.js"></script>
@@ -17,44 +15,45 @@
             <a href="#contact">Kontakt</a>
         </nav>
     </header>
-    <!-- comment-->
+    
     <section id="about">
         <h2>Über mich</h2>
         <p>Ich bin ein Webentwickler und lerne HTML und CSS.</p>
     </section>
 
     <section>
-        <label>first number</label>
-        <input  id="first_number" type="number" >
-        <label>second number</label>
-        <input  id="second_number" type="number" >
+        <input type="text" placeholder="Suche..." id="searchInput" />
+       <button onclick="search()">Suchen</button>
+    </section>
+
+    <section>
+    <input id="my_input" type="text">
+    <button onclick="my_func()">Funktion</button>
+    <br>
+</section>
+
+    <section id="calculator">
+        <h2>Taschenrechner</h2>
+        <input type="number" id="first_number" placeholder="Erste Zahl">
+        <input type="number" id="second_number" placeholder="Zweite Zahl">
+        <button onclick="my_add()">+</button>
+        <button onclick="my_minus()">-</button>
+        <button onclick="my_multiple()">*</button>
+        <button onclick="my_divide()">/</button>
         <br><br>
-        <button onclick="my_add()">add</button>
-        <button onclick="my_minus()">minus</button>
-        <button onclick="my_multiple()">multiple</button>
-        <button onclick="my_divide()">divide</button>
-        <br>
+        <label for="result">Ergebnis:</label>
+        <input type="text" id="result" readonly>
     </section>
 
     <section id="projects">
-        <h2 >Projekte Header</h2>
-        <div class="project">
-            <h3>Projekt 1</h3>
-            <p>Beschreibung des Projekts.</p>
-            <a href="google.com">googli </a>
-        </div>
         <div class="project">
             <h3>Projekt 2</h3>
             <p>Beschreibung des Projekts.</p>
-            <button>ohne funktionalität</button>
         </div>
     </section>
 
     <footer>
-        <p>Kontakt: <a  href="mailto:example@example.com">example@example.com</a>
-            <a  href="mailto:example@example.com">rrrrrrr@example.com</a>
-        </p>
+        <p>Kontakt: <a href="mailto:example@example.com">example@example.com</a></p>
     </footer>
-
 </body>
 </html>
